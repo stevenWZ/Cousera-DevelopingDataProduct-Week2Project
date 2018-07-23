@@ -1,0 +1,21 @@
+---
+title: "course9 Week2 Project"
+author: "Steven Wang"
+date: "July 22, 2018"
+output: html_document
+---
+
+# Find my hometown
+
+## Get a whole world map
+```{R}
+library(leaflet)
+mymap<-addTiles(leaflet())
+mymap
+```
+
+## Mark my hometown on map
+```{R}
+mymap<-mymap %>% addMarkers(lat = 36.9789, lng = 120.7117,popup = "My hometown")
+mymap
+```
